@@ -1,0 +1,10 @@
+$(document).ready(function(){
+	$(".down").hover(
+		function(){
+			$(this).css("background-color","#a7dbff");
+		},
+		function(){
+			$(this).css("background-color","white");
+		}
+	);
+});

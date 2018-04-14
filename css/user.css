@@ -1,0 +1,150 @@
+/* CSS 用户主页面 */
+html,body{
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+}
+a{
+	color:black;
+	text-decoration:none;
+}
+ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+.wrapper{
+	min-height:1000px;
+	min-width:1300px;
+	font-family:微软雅黑;
+	background-image:url("../images/user/u80.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	overflow-x:auto;
+	overflow-y:auto;
+}
+.main{
+	width:1150px;
+	margin:0 auto;
+	overflow:hidden;
+}
+/* 顶层 */
+.top{
+	height:80px;
+	background-color:white;
+	margin-top:30px;
+	font-weight:normal;
+	color:#3c3c3c;
+	border-top:8px solid #05c1f1;
+}
+h1{
+	font-size:40px;
+	margin-left:40px;
+	margin-top:15px;
+	font-weight:normal;
+}
+.top1{
+	display:inline-block;
+}
+.top img{
+	vertical-align:middle;
+}
+#srch-txt{
+	width:270px;
+	height:25px;
+	font-size:15px;
+	margin-left:120px;
+}
+#model{
+	font-size:18px;
+	margin-left:50px;
+}
+#model img{
+	opacity:0.6;
+}
+#message{
+	margin-left:30px;
+}
+#mask{
+	margin-left:20px;
+}
+#mask-img{
+	position:relative;
+	top:-5px;
+}
+.mask-menu{
+	float:right;
+	margin-left:10px;
+	margin-top:10px;
+	width: 0;
+    height: 0;
+    border-top: 10px solid #999;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+/* 下拉框*/
+.mask-menu-down{
+	width:80px;
+	height:128px;
+	border:1px solid #D9D9D9;
+	box-shadow:0 1px 1px 1px #ccc;
+	background-color:white;
+	position:fixed;
+	top:110px;
+	left:1120px;
+	display:none;
+}
+.mask-menu-down:before{
+	content: "";
+    width: 0;
+    height: 0;
+	float:right;
+    margin-top:-10px;
+	margin-right:32px;
+    border-bottom: 10px solid #ccc;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+.mask-menu-down li{
+	height:30px;
+	text-align:center;
+}
+.first{
+	margin-top:8px;
+}
+/* 左侧导航栏 */
+.left-nav{
+	float:left;
+	width:170px;
+	margin-top:45px;
+	background-color:white;
+}
+.left-nav li{
+	height:60px;
+	border-bottom:1px solid #ccc;
+}
+.left-nav li img,.left-nav li p{
+	display:inline-block;
+}
+.left-nav li img{
+	width:20px;
+	height:20px;
+	margin-left:28px;
+}
+.left-nav li p{
+	font-size:18px;
+	margin-left:18px;
+}
+.active{
+	border-left:8px solid #0ca6f0;
+	background-color:#a7dbff;
+}
+/* 主体内容 */
+#right-frame{
+	width:945px;
+	height:700px;
+	float:right;
+	margin-top:45px;
+	background-color:white;
+}
