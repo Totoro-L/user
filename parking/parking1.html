@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="../css/parking1.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<ul class="title">
+		<li id="title1" class="active"><a href="#">基本信息</a></li>
+		<li id="title2"><a href="#">安全中心</a></li>
+	</ul>
+	<div class="parking-content1">
+		<form id="form-img">
+			<img id="image" src="../images/user/u115.jpg" height="200px" width="200px"/>
+			<input class="img-select" type="button" value="更改头像"/>
+			<input class="img-file" type="file" onchange="selectImage(this);uploadImage();"/>
+		</form>
+		<form id="form-else">
+		<div class="form-self">
+			<div id="name"><img src="../images/user/u164.png"/><p class="self-title">昵称：</p><input class="txt" type="text" disabled="disabled" id="parking-name-txt"><a href="#" id="parking-name">修改昵称</a>
+				<input class="btn1" type="button" value="确定"/>&nbsp<input class="btn2" type="button" value="取消"/>
+			</div>
+			<div><img src="../images/user/u166.png"/><p class="self-title">生日：</p><input class="txt" type="text" disabled="disabled" id="parking-birth-txt"></div>
+			<div id="phone"><img src="../images/user/u162.png"/><p class="self-title">电话号码：</p><input class="txt" type="text" disabled="disabled" id="parking-phone-txt"><a href="#" id="parking-phone">修改号码</a>
+				<input class="btn1" type="button" value="确定"/>&nbsp<input class="btn2" type="button" value="取消"/>
+			</div>
+			<div id="message"><img src="../images/user/u160.png"/><p class="self-title">电子邮箱：</p><input class="txt" type="text" disabled="disabled" id="parking-message-txt"><a href="#" id="parking-message">修改邮箱</a>
+				<input class="btn1" type="button" value="确定"/>&nbsp<input class="btn2" type="button" value="取消"/>
+			</div>
+		</div>
+		<!-- <div id="change"> -->
+		
+		<!-- </div> -->
+		</form>
+	</div>
+	<div class="parking-content2">
+		
+	</div>
+	<script src="../script/ajax.js"></script>
+	<script src="../script/push.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="../script/parking1.js"></script>
+	<script src="../script/photo.js"></script>
+</body>
+</html>

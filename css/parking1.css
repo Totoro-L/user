@@ -1,0 +1,108 @@
+/* css */
+html,body{
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+}
+a{
+	color:black;
+	text-decoration:none;
+}
+ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	border-bottom:2px solid #0ca6f0;
+	width:880px;
+}
+.title li{
+	width:100px;
+	height:33px;
+	font-size:20px;
+	display:inline-block;
+	margin-left:60px;
+	margin-top:20px;
+	
+	text-align:center;
+}
+.active{
+	border-bottom:3px solid #05c1f1;
+}
+/* 基本信息 */
+.parking-content1{
+	overflow:hidden;
+	position:relative;
+}
+.img-select{
+	display:block;
+	width:200px;
+	height:40px;
+	position:absolute;
+	top:226px;
+	left:100px;
+	background-color:black;
+	opacity:0.5;
+	color:white;
+	border:none;
+	font-size:20px;
+	display:none;
+}
+#image{
+	cursor:pointer;
+}
+.img-file{
+	display:none;
+}
+#form-img{
+	float:left;
+	margin-top:65px;
+	margin-left:100px;
+}
+.form-self div{
+	margin-top:-5px;
+}
+.form-self img{
+	width:22px;
+	height:20px;
+}
+#form-else {
+	float:left;
+	margin-top:65px;
+	margin-left:70px;
+}
+.form-self p,.form-self img,.form-self a{
+	display:inline-block;
+}
+.form-self a{
+	text-decoration:underline;
+	margin-left:10px;
+	color:#183a6a;
+}
+.self-title{
+	font-size:20px;
+}
+.txt{
+	width:213px;
+	height:25px;
+	margin-bottom:30px;
+	font-size:20px;
+}
+.form-self div input:disabled{
+    border: none;
+    background-color: white;
+    color:black;
+	font-size:20px;
+}
+.form-self p{
+	margin-left:10px;
+}
+.btn1,.btn2{
+	width:70px;
+	height:30px;
+	background-color:#05c1f1;
+	border:none;
+	color:white;
+	display:none;
+}
