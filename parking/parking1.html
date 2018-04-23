@@ -10,10 +10,11 @@
 		<li id="title2"><a href="#">安全中心</a></li>
 	</ul>
 	<div class="parking-content1">
-		<form id="form-img">
+		<form name="form1" id="form1">
 			<img id="image" src="../images/user/u115.jpg" height="200px" width="200px"/>
 			<input class="img-select" type="button" value="更改头像"/>
-			<input class="img-file" type="file" onchange="selectImage(this);uploadImage();"/>
+			<p><input type="file" name="photo" id="photo"></p>
+			<p><input type="button" name="b1" value="上传" onclick="fsubmit()"></p>
 		</form>
 		<form id="form-else">
 		<div class="form-self">
@@ -28,18 +29,28 @@
 				<input class="btn1" type="button" value="确定"/>&nbsp<input class="btn2" type="button" value="取消"/>
 			</div>
 		</div>
-		<!-- <div id="change"> -->
-		
-		<!-- </div> -->
 		</form>
 	</div>
 	<div class="parking-content2">
-		
+		<h2>修改密码</h2>
+		<form id="change-pass">
+			<p>密码：<input id="past" type="password"/></p>
+			<p>新密码：<input id="new" type="password"/><span class="tip">6-16位，由字母（区分大小写）、数字组成</span></p>
+			<div class="strong">
+				<span class="span1">弱</span>
+				<span class="span2">中</span>
+				<span class="span3">强</span>
+			</div>
+			<p>确认密码：<input id="new-repeat" type="password"/></p>
+			<div><input id="btn3" type="button" value="保存"/></div>
+		</form>
 	</div>
 	<script src="../script/ajax.js"></script>
 	<script src="../script/push.js"></script>
 	<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="../script/parking1.js"></script>
 	<script src="../script/photo.js"></script>
+	<script src="../script/parking1-password.js"></script>
 </body>
 </html>

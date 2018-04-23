@@ -10,24 +10,23 @@ $(document).ready(function(){
 	});
 	
 	
-	
 	ajax('../../userdata.php', function (str){
 	    var reg = new RegExp('"',"g");  
-        str = str.replace(reg, "");
 		var arr=JSON.parse(str);
-		
-		// var Touxiang=JSON.stringify(arr.userPhoto);
-		// $("#image").attr("src",Touxiang);
-		
-		$("#parking-name-txt").val(JSON.stringify(arr.userName));
-		$("#parking-birth-txt").val(JSON.stringify(arr.userBirthday));
-		$("#parking-phone-txt").val(JSON.stringify(arr.userTEL));
-		$("#parking-message-txt").val(JSON.stringify(arr.userEmail));
+		var name=JSON.stringify(arr.userName);
+		name = name.replace(reg, "");
+		var birth=JSON.stringify(arr.userBirthday);
+		birth = birth.replace(reg, "");
+		var phone=JSON.stringify(arr.userTEL);
+		phone = phone.replace(reg, "");
+		var message=JSON.stringify(arr.userEmail);
+		$("#parking-name-txt").val(name);
+		$("#parking-birth-txt").val(birth);
+		$("#parking-phone-txt").val(phone);
+		$("#parking-message-txt").val(message);
 	}, function (){
 		alert('失败');
 	});
-	
-	
 	
 	
 	
@@ -45,7 +44,7 @@ $(document).ready(function(){
 		var name ={
 			"userName":$("#parking-name-txt").val()
 		};
-		push(name,'../../userchange.php')
+		push(name,'../../userchange.php');
 		$("#parking-name-txt").attr("disabled","disabled");
 		$("#name .btn1").hide();
 		$("#name .btn2").hide();
@@ -66,7 +65,7 @@ $(document).ready(function(){
 		var name ={
 			"userTEL":$("#parking-phone-txt").val()
 		};
-		push(name,'../../userchange.php')
+		push(name,'../../userchange.php');
 		$("#parking-phone-txt").attr("disabled","disabled");
 		$("#phone .btn1").hide();
 		$("#phone .btn2").hide();
@@ -86,9 +85,9 @@ $(document).ready(function(){
 	});
 	$("#message .btn1").click(function(){
 		var name ={
-			"userName":$("#parking-message-txt").val()
+			"userEmail":$("#parking-message-txt").val()
 		};
-		push(name,'../../userchange.php')
+		push(name,'../../userchange.php');
 		$("#parking-message-txt").attr("disabled","disabled");
 		$("#message .btn1").hide();
 		$("#message .btn2").hide();

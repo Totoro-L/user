@@ -1,0 +1,56 @@
+/* 车位上传css */
+.sr-only{
+	display:none;
+}
+.form-control{
+	width:150px;
+	height:30px;
+	font-size:15px;
+}
+.form-control1{
+	width:50px;
+	height:30px;
+	font-size:15px;
+}
+.form-group{
+	display:inline-block;
+	vertical-align:middle;
+}
+.park-num{
+	width:226px;
+	height:25px;
+	font-size:15px;
+}
+h1{
+	width:910px;
+	font-size:20px;
+	font-weight:normal;
+	padding:10px 10px;
+	border-bottom:2px solid #0ca6f0;
+	margin-left:-10px;
+}
+#onload-details{
+	margin:20px 116px;
+}
+#onload-details div{
+	margin-bottom:20px;
+}
+.fujian{
+	height:70px;
+}
+#btn1{
+	margin-left:250px;
+	margin-top:30px;
+	width:140px;
+	height:35px;
+	background-color:#0ca6f0;
+	font-size:18px;
+	color:white;
+	border:none;
+}
+
+
+/* ul{ */
+	/* list-style-type:none; */
+/* } *
+/
